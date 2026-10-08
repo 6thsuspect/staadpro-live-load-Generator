@@ -1,0 +1,53 @@
+import type { Vehicle } from "../../../engine/types";
+// Editable reference templates, NOT certified IRC 6 definitions. Verify against the applicable edition.
+export const vehicles: Vehicle[] = [
+  {
+    id: "70r-wheeled",
+    name: "IRC 70R Wheeled",
+    code: "IRC 6 · reference",
+    type: "wheeled",
+    width: 2.79,
+    length: 15.22,
+    verified: false,
+    axles: [
+      { position: 0, load: 80, wheelSpacing: 1.93 },
+      { position: 3.96, load: 120, wheelSpacing: 1.93 },
+      { position: 5.48, load: 120, wheelSpacing: 1.93 },
+      { position: 7.61, load: 170, wheelSpacing: 1.93 },
+      { position: 8.98, load: 170, wheelSpacing: 1.93 },
+      { position: 12.03, load: 170, wheelSpacing: 1.93 },
+      { position: 13.4, load: 170, wheelSpacing: 1.93 },
+    ],
+  },
+  {
+    id: "class-a",
+    name: "IRC Class A",
+    code: "IRC 6 · reference",
+    type: "wheeled",
+    width: 2.3,
+    length: 18.5,
+    verified: false,
+    axles: [
+      { position: 0, load: 27, wheelSpacing: 1.8 },
+      { position: 1.1, load: 27, wheelSpacing: 1.8 },
+      { position: 4.3, load: 114, wheelSpacing: 1.8 },
+      { position: 5.5, load: 114, wheelSpacing: 1.8 },
+      { position: 9.8, load: 68, wheelSpacing: 1.8 },
+      { position: 12.8, load: 68, wheelSpacing: 1.8 },
+      { position: 15.8, load: 68, wheelSpacing: 1.8 },
+      { position: 18.5, load: 68, wheelSpacing: 1.8 },
+    ],
+  },
+  {
+    id: "70r-tracked",
+    name: "IRC 70R Tracked",
+    code: "IRC 6 · reference",
+    type: "tracked",
+    width: 2.9,
+    length: 4.57,
+    trackWidth: 0.84,
+    trackSpacing: 2.06,
+    verified: false,
+    axles: [{ position: 2.285, load: 700, wheelSpacing: 2.06 }],
+  },
+];
